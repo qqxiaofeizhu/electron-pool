@@ -44,7 +44,7 @@ class PoolItem {
             return newParams;
         };
 
-        this.window.on('close', () => {
+         this.window.on('closed', () => {
             this.removeWindow(this.id);
         });
 
